@@ -1,7 +1,7 @@
 # ArgonOneRPI4Kali
 ## Argon One fan control for the Raspberry Pi 4 running Kali
 
-This is a modified version of the original `argononed.py` file adapted to run on Kali distro on RP4. The original failed as it depended upon an old version of python, and Kali has no `vcgencmd` package to track CPU temperature.
+This is a modified version of the original `argononed.py` file adapted to run on Kali distro on RPI4. The original failed as it depended upon an old version of python, and Kali has no `vcgencmd` package to track CPU temperature.
 
 This version uses python3 and removes the dependency on `vcgencmd`. 
 
