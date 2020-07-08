@@ -32,6 +32,8 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 shutdown_pin=4
 GPIO.setup(shutdown_pin, GPIO.IN,  pull_up_down=GPIO.PUD_DOWN)
+
+
 def shutdown_check():
 	while True:
 		pulsetime = 1
