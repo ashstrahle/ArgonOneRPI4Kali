@@ -48,8 +48,8 @@ fi
 
 if [ "$CHECKPLATFORM" = "Kali" ]
 then
-    # Check if pip3 is installed
-	if ! [ `which pip3` ] then apt-get install python3-pip ; fi
+	# Check if pip3 is installed
+	if ! [ `which pip3` ]; then apt-get install python3-pip ; fi
 	
 	pkglist=(i2c-tools)	
 	sudo pip3 install rpi.gpio
