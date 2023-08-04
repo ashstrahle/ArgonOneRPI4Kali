@@ -48,7 +48,9 @@ fi
 
 if [ "$CHECKPLATFORM" = "Kali" ]
 then
-	echo "HERE!!!"
+    # Check if pip3 is installed
+	if ! [ `which pip3` ] then apt-get install python3-pip ; fi
+	
 	pkglist=(i2c-tools)	
 	sudo pip3 install rpi.gpio
 	sudo pip3 install smbus
