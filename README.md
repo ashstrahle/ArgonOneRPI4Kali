@@ -22,8 +22,15 @@ This repo contains modified versions of the original `argon1.sh` install script,
 
     enable_uart=1
   ```
-  4. Execute: 
+  4. Add the following to `/etc/modules`:
   ```
+  i2c-dev
+  ``` 
+  5. Reboot
+
+  6. Execute: 
+  ```
+    sudo chmod a+x ./argonone-config.sh
     sudo ./argonone-config.sh
   ```
 You're done!
